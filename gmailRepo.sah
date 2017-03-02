@@ -1,0 +1,15 @@
+var $_EMAILBOX_EMAIL = _emailbox("Email");
+var $_SUBMIT_NEXT = _submit("Next");
+var $_CHECKBOX_PERSISTENTCOOKIE = _checkbox("PersistentCookie");
+var $_PASSWORD_PASSWD = _password("Passwd");
+var $_SUBMIT_SIGN_IN = _submit("Sign in");
+var $_DIV_COMPOSE = _div("COMPOSE");
+var $_TEXTAREA_TO = _textarea("to");
+var $_TEXTBOX_SUBJECTBOX = _textbox("subjectbox");
+var $_DIV_AM_AL_EDITABLE_LW_AVF = _div("Am Al editable LW-avf");
+var $_DIV_SEND = _div("Send");
+var $_LINK_SENT_MAIL = _link("Sent Mail");
+var $_SPAN_GB9A_GBII = _span("gb_9a gbii");
+var $_LINK_SIGN_OUT = _link("Sign out");
+var $_HEADING2_SIGN_IN_TO_CONTINUE_TO_GMAIL = _heading2("Sign in to continue to Gmail");
+var $_DIV_HEADER_CONTENT_CLEARFIX = _div("header content clearfix");

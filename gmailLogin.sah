@@ -1,0 +1,43 @@
+_include("gmailRepo.sah");
+function logIn($email, $passwd){
+	_setValue($_EMAILBOX_EMAIL, $email);
+	_click($_SUBMIT_NEXT);
+	_uncheck($_CHECKBOX_PERSISTENTCOOKIE);
+	_setValue($_PASSWORD_PASSWD, $passwd);
+	_click($_SUBMIT_SIGN_IN);
+}
+
+function createMail($to, $subjectbox){
+	_click($_DIV_COMPOSE);
+	_setValue($_TEXTAREA_TO, $to);
+	_setValue($_TEXTBOX_SUBJECTBOX, $subjectbox);
+	_click($_DIV_AM_AL_EDITABLE_LW_AVF);
+	_click($_DIV_SEND);
+	_click($_LINK_SENT_MAIL);
+}
+
+function logOut(){
+	_click($_SPAN_GB9A_GBII);
+	_click($_LINK_SIGN_OUT);
+}
+
+function assertLogOut($sign_in_to_continue_to_gmail){
+	_assertExists($_HEADING2_SIGN_IN_TO_CONTINUE_TO_GMAIL);
+	_assertVisible($_HEADING2_SIGN_IN_TO_CONTINUE_TO_GMAIL);
+	_assertEqual($sign_in_to_continue_to_gmail, _getText($_HEADING2_SIGN_IN_TO_CONTINUE_TO_GMAIL));
+	_assertContainsText($sign_in_to_continue_to_gmail, $_HEADING2_SIGN_IN_TO_CONTINUE_TO_GMAIL);
+	_click($_DIV_HEADER_CONTENT_CLEARFIX);
+}
+
+/* --Functions Above-- */
+
+
+//_navigateTo("https://mail.google.com");
+//logIn("hvms.in@gmail.com", "dom@12345");
+
+//createMail("havas40media@gmail.com", "TestMail");
+
+//logOut();
+
+//assertLogOut("Sign in to continue to Gmail");
+
